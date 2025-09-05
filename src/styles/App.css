@@ -1,0 +1,133 @@
+/* src/styles/app.css */
+@font-face {
+  font-family: 'Kugile';
+  src: url('/fonts/Kugile_Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Priestacy';
+  src: url('/fonts/Priestacy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RusticRoadway - Personal use';
+  src: url('/fonts/RusticRoadway.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ====== Light Theme (default) ====== */
+:root {
+  --icon-color: #10252f;       /* light mode download icon color */         /* light mode upload icon color */
+  --icon-color-download: #162e39; 
+  --bg-color: #f5e7cf;
+  --clip-bg: #162e39;
+  --text-color: #494949;
+  --panel-text: #605f5f;
+  --primary-color: #f5e7cf;
+  --primary-hover: #d6c09a;
+  --button-text-color: #4d4d4d;
+
+  /*back-buuton-hover*/
+  --back-create: #254a5c;
+  --back-join: #f5e7cf;
+  --back-room: #566369;
+  
+  /* File section colors */
+  --border-color: #d1d5db;
+  --received-bg: #f9fafb;
+  --filepanel-bg: #c6e3f7;
+  --filepanel-border: #6b5219;
+
+  /*Home Light*/
+  --bg-gradient: linear-gradient(180deg,  #f5e7cf 0%, #162e39 100%);
+  --hometxt-color: #10252f;
+  --icon-glow-color1: #ffffff;
+  --icon-glow-color2: #fdfdfd;
+  --icon-glow-shadow1: 0 0 0px var(--icon-glow-color1);
+  --icon-glow-shadow2: 0 0 20px var(--icon-glow-color2);
+  --text-shadow-glow: 0 0 12px #fdfdfd;
+ 
+  /* Create Room - Light Mode */
+  --cr-gradient: linear-gradient(225deg,  #f5e7cf 0%, #162e39 100%);
+  --jr-gradient: linear-gradient(135deg, #f5e7cf 0%, #162e39 100%);
+  --cr-box-shadow: inset 0 0 35px #fffed7;
+  --cr-text-shadow: 0 0 5px #aaa, 0 0 10px #ccc;
+
+  /* join Room Light */
+  --glow-color: #1d323b;
+  --glow-color-soft: rgba(255, 255, 255, 0.3);
+  --glow-bg: rgba(255, 255, 255, 0.058);
+  --glow-bg-hover: rgba(255, 255, 255, 0.15);
+  --shadow-soft: 0 0 12px var(--glow-color-soft);
+  --shadow-hover: 0 0 20px #ffffffb3;
+  --shadow-outer: 0px 0px 10px var(--glow-color);
+  --shadow-both: 0px 0px 10px var(--glow-color), inset 0px 0px 10px var(--glow-color);
+
+}
+
+/* ====== Dark Theme (device preference) ====== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --icon-color: #ffd86b;       /* light mode download icon color */
+    --icon-color-download: #9a8b72; 
+    --bg-color: #122026;
+    --clip-bg: #9a8b72;
+    --text-color: #8b8b8b;
+    --panel-text: #1c274c;
+    --h3: #deb87f;
+    --primary-color: #162e39;
+    --primary-hover: #2a424e;
+
+    --border-color: #5a4e4a;
+    --received-bg: #3a3230;
+    --filepanel-bg: #464d54;
+    --filepanel-border: #0c2641;
+
+    /*back-buuton-hover*/
+    --back-create: #09202a;
+    --back-join: #162e39;
+    --back-room: #566369;
+
+    /*Home Dark*/
+    --bg-gradient: linear-gradient(180deg, #162e39 0%, #030e13 100%);
+    --cr-gradient: linear-gradient(225deg, #162e39 0%, #030e13 100%);
+    --jr-gradient: linear-gradient(135deg, #162e39 0%, #030e13 100%);
+    --hometxt-color: #ffd86b;
+    
+    --icon-glow-color1: #ffffff;
+    --icon-glow-color2: #fdfdfd;
+    --icon-glow-shadow1: 0 0 0px var(--icon-glow-color1);
+    --icon-glow-shadow2: 0 0 20px var(--icon-glow-color2);
+    
+    --text-shadow-glow: 0 0 12px #fdfdfd;
+
+     /* Create Room - Dark Mode */
+    --cr-border: 0px solid  transparent;
+    --cr-box-shadow: inset 0 0 15px #ffffff;
+    --cr-bg-color: #162e39;
+    --cr-text-shadow: 0 0 10px #fdfdfd, 0 0 15px #ffffff;
+    --glow-color: #fedf8c;
+    --glow-color-soft: rgba(255, 255, 255, 0.3);
+    --glow-bg: rgba(255, 255, 255, 0.058);
+    --glow-bg-hover: rgba(255, 255, 255, 0.15);
+  }
+}
+
+
+/* Base global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body as a flex container centered vertically and horizontally */
+

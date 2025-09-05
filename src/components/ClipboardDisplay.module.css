@@ -1,0 +1,49 @@
+.clipboardContainer {
+  flex: 1 1 auto;  /* grow to fill available vertical space */
+  display: flex;
+  flex-direction: column;
+  min-height: 0;   /* important to allow flex shrinking inside flexbox */
+  overflow: hidden;
+  margin-bottom: 0.5rem; /* prevent clipboard from overflowing container */
+}
+
+.clipboardBox {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  background-color: var(--bg-color);          /* theme background */
+  border: none;    /* light border from theme */
+  border-radius: 10px;
+  padding: 1rem;
+  font-family: monospace, monospace;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  user-select: text;
+  color: var(--text-color);                    /* text color from theme */
+}
+
+.copyBtn {
+  align-self: flex-end;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--clip-bg);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  font-size: clamp(0.6rem, 2vw, 0.8rem);
+}
+
+.copyBtn:hover,
+.copyBtn:focus {
+  background-color: var(--primary-hover);
+  outline: none;
+}
+
+.copyBtn:active {
+  transform: scale(0.95);
+}

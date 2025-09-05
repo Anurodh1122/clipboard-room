@@ -1,0 +1,75 @@
+
+/* Full viewport container, center content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--cr-gradient); /* use theme gradient */
+  color: var(--button-text-color);    /* text color matching buttons */
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  position:relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Main title above room id */
+.title {
+  font-family: 'Kugile', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  /*text-shadow: var(--text-shadow-glow);  keep shadow for readability */
+  color: var(--hometxt-color);
+}
+
+/* Big bold room id */
+.roomId {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  user-select: all;
+  padding: 2% 5%;
+  color: var(--hometxt-color);
+  border: none;
+
+  box-shadow: var(--cr-box-shadow);
+  border-radius: 30px;
+  background-color: var(--cr-bg-color);
+
+}
+
+/* Instruction text */
+.instruction {
+  font-family: 'Kugile', sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  opacity: 0.8;
+  color: var(--hometxt-color);
+}
+
+/* Waiting message */
+.waiting {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  font-weight: 400;
+  opacity: 0.8;
+  font-style: italic;
+  color: var(--hometxt-color);
+  text-shadow: var(--cr-text-shadow);
+  
+}
+/* ChatRoom.module.css */
+.backRight {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--icon-color);
+}
+.backRight:hover,
+.backRight:focus {
+  background-color: var(--back-create);
+  outline: none;
+}
