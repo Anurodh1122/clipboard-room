@@ -16,5 +16,5 @@ A peer-to-peer clipboard sharing app built with React, WebRTC, and WebSocket sig
 - Docker for deployment
 
 ## Live Demo
-🔗 [Try it here] (https://anurodh-nas.taila0853b.ts.net/)
+Try it live: [Clipboard](https://anurodh-nas.taila0853b.ts.net/) 
 
