@@ -1,4 +1,4 @@
-# Clipboard Sharing App 📋
+# Clipboard Room App 📋
 
 A peer-to-peer clipboard sharing app built with React, WebRTC, and WebSocket signaling.
 
